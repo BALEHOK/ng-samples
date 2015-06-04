@@ -1,0 +1,57 @@
+.container
+  .row
+    .col-md-4.col-md-offset-1
+      h1 Registration
+
+  form.form-horizontal(data-ng-submit='form.submit()')
+    .form-group
+      label.col-md-2.col-md-offset-1.control-label(for='firstName')
+        |First name:
+      .col-md-4
+        input.form-control(type='text', name='firstName', minlength=3, maxlength=15, data-ng-model='form.merchant.firstName')
+    .form-group
+      label.col-md-2.col-md-offset-1.control-label(for='lastName')
+        |Last name:
+      .col-md-4
+        input.form-control(type='text', name='lastName', minlength=3, maxlength=15, data-ng-model='form.merchant.lastName')
+    .form-group
+      label.col-md-2.col-md-offset-1.control-label(for='username')
+        |Username:
+      .col-md-4
+        input.form-control(type='text', name='username', minlength=3, maxlength=15, required='required', data-ng-model='form.merchant.username')
+    .form-group
+      label.col-md-2.col-md-offset-1.control-label(for='businessName')
+        |Business name:
+      .col-md-4
+        input.form-control(type='text', name='businessName', minlength=3, maxlength=15, data-ng-model='form.merchant.businessName')
+    .form-group
+      label.col-md-2.col-md-offset-1.control-label(for='category')
+        |Category:
+      .col-md-4
+        input.form-control(type='text', name='category', minlength=3, maxlength=15, data-ng-model='form.merchant.category')
+    .form-group
+      label.col-md-2.col-md-offset-1.control-label(for='businessDescription')
+        |Business description:
+      .col-md-4
+        input.form-control(type='text', name='businessDescription', minlength=3, maxlength=15, data-ng-model='form.merchant.businessDescription')
+    .form-group
+      label.col-md-2.col-md-offset-1.control-label(for='websiteUrl')
+        |Website:
+      .col-md-4
+        input.form-control(type='text', name='websiteUrl', minlength=3, maxlength=15, data-ng-model='form.merchant.websiteUrl')
+    .form-group
+      label.col-md-2.col-md-offset-1.control-label(for='businessPhoneNumber')
+        |Business Phone Number:
+      .col-md-4
+        input.form-control(type='text', name='businessPhoneNumber', minlength=3, maxlength=15, required='required', data-ng-model='form.merchant.businessPhoneNumber')
+    .form-group
+      label.col-md-2.col-md-offset-1.control-label(for='contactPhoneNumber')
+        |Contact Phone Number:
+      .col-md-4
+        input.form-control(type='text', name='contactPhoneNumber', minlength=3, maxlength=15, required='required', data-ng-model='form.merchant.contactPhoneNumber')
+    .form-group
+      .col-md-4.col-md-offset-3
+        button.btn.btn-primary(type='submit') Submit
+
+  .row
+    .col-md-6.col-md-offset-1(data-ui-view='')
