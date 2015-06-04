@@ -1,0 +1,9 @@
+﻿<div class="container-fluid" data-ng-controller="workout as vm">
+    <div data-ng-hide="vm.isRest"
+         data-ng-include="'/app/workout/partials/ex.html'">
+    </div>
+    
+    <div data-ng-show="vm.isRest"
+         data-ng-include="'/app/workout/partials/rest.html'">
+    </div>
+</div>

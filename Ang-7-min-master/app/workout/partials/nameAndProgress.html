@@ -1,0 +1,11 @@
+﻿<div class="row-fluid">
+	<div class="activity">{{vm.exName}}</div>
+</div>
+<div class="row-fluid hidden-phone">
+	<div class="span8 offset2">
+		<div class="span1" data-ng-repeat="ball in vm.totalEx | range">
+		    <div class="ball"
+                data-ng-class="{'ball-fade': $index < vm.currentIndex}"></div>
+		</div>
+	</div>
+</div>
